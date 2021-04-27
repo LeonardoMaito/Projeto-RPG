@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Leonardo Maito
  */
 public class RPG {
-    //teste para github
+    //teste para github 2
     //variaveis de status
     double hp, def, heal = 15, backStab = 1.5, hpBoss = 90, defBoss = 0.25;
 

@@ -2,6 +2,6 @@
 
 ## Versão 30/06/2021
 
-### Ajeitada por: Pedro
+### Organizada por: Pedro
 
 Funcionalidades similares ao Alpha 0.1, mas um código mais limpo e ajeitado. Base para as demais funções.

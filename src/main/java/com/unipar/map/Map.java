@@ -20,8 +20,8 @@ public class Map {
 
         map.put(pos, hero.getName());
 
-        for (int key = 1; key < sizeMap; key++) {
-            map.put("1_" + key, random.randomObject(enemies));
+        for (int i = 1; i < sizeMap; i++) {
+            map.put("1_" + i, random.randomObject(enemies));
             for (int j = 0; j < sizeMap; j++) {
                 map.put("2_" + j, random.randomObject(enemies));
             }

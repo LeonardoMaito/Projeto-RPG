@@ -22,7 +22,7 @@ public class Movement {
 
     public void heroMovement(Hero hero, Map map, RandomPositionGenerator random) {
         input = JOptionPane.showInputDialog("Digite a posição");
-//        checkMovement(input,map);
+        checkMovement(input,map);
         String keyValue = map.getMap().get(input);
         if (checkMovement(input, map)) {
             map.getMap().replace(map.getPos(), hero.getHeroName(), random.getSearchedRoom());

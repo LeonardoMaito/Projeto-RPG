@@ -2,5 +2,8 @@
 
 ## Changelog
 
-- Refatoração de nomes como EmpteyRoom, RandomObjectGenerator e afins para corrigir erros ortográficos e deixar os nomes semelhantes ao restante do código.
-- Algumas redundâncias de IFs e ELSE-IFs foram corrigidas também.
+- Add comentarios em algumas partes para facilitar o entendimento
+- Add um "loop" ao errar o valor no movimento, fazendo a escrever novamente.
+- Movido randomItemSearch para Moviment
+- Movido randomTypeOfEnemy para Random
+- Tentativa de modificações no Enimies para objeto. 

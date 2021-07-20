@@ -14,31 +14,32 @@ import javax.swing.JOptionPane;
  */
 public class Enemies {
 
-    double enemyHP;
-    double enemyAttackMax;
-    double enemyAttackMin;
-    String enemyType;
+    private double enemyHP;
+    private double enemyAttackMax;
+    private double enemyAttackMin;
+    private String enemyName;
 
     static Enemies orc = new Enemies();
     static Enemies goblin = new Enemies();
     static Enemies thrall = new Enemies();
 
     public void mediumEnemyStatus() {
-        orc.enemyType = "Orc";
+        orc.enemyName = "Orc";
         orc.enemyHP = 70;
         orc.enemyAttackMax = 40;
         orc.enemyAttackMin = 0;
     }
 
     public void minorEnemyStatus() {
-        goblin.enemyType = "Goblin";
+        goblin.enemyName = "Goblin";
         goblin.enemyHP = 50;
         goblin.enemyAttackMax = 30;
         goblin.enemyAttackMin = 0;
+        
     }
 
     public void greatEnemyStatus() {
-        thrall.enemyType = "Thrall";
+        thrall.enemyName = "Thrall";
         thrall.enemyHP = 100;
         thrall.enemyAttackMax = 50;
         thrall.enemyAttackMin = 25;
@@ -49,7 +50,7 @@ public class Enemies {
         double bossAtk = (Math.random() * ((enemyAttackMax - enemyAttackMin) + 1));
         //Mesma ideia do ataque do personagem principal
 
-        System.out.format("O " + enemyType + " faz sua jogada" + "\n");
+        System.out.format("O " + enemyName + " faz sua jogada" + "\n");
 
         bossAtk = (bossAtk);
         enemyHP = (enemyHP - bossAtk);
@@ -59,7 +60,19 @@ public class Enemies {
     }
     
     
-    public Enemies getoo(){
-        return this;
+    public Enemies getObjectGoblin(){
+        return goblin;
+    }
+    public Enemies getObjectOrc(){
+        return orc;
+    }
+    public Enemies getObjectThrall(){
+        return thrall;
+    }
+    public String getEnemyName(){
+        return enemyName;
+    }
+    public double getEnemyHp(){
+        return enemyHP;
     }
 }

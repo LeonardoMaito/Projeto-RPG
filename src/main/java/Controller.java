@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import com.unipar.combatMenu.Menu;
+import com.unipar.menu.Combat;
 import com.unipar.enemies.Enemies;
 import com.unipar.heros.Hero;
 import com.unipar.map.Map;
@@ -24,7 +24,7 @@ public class Controller {
     RandomPositionGenerator random = new RandomPositionGenerator();
     Enemies enemy = new Enemies();
     
-    Menu menus = new Menu();
+    Combat menus = new Combat();
 
     void iniciate() {
         hero.heroChoice();

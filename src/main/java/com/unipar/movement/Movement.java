@@ -5,7 +5,7 @@
  */
 package com.unipar.movement;
 
-import com.unipar.combatMenu.Menu;
+import com.unipar.menu.Combat;
 import com.unipar.enemies.Enemies;
 import com.unipar.heros.Hero;
 import com.unipar.map.Map;
@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
 public class Movement {
 
     public String input;
-    Menu menus = new Menu();
+    Combat menus = new Combat();
     static RandomPositionGenerator random = new RandomPositionGenerator();
     static Enemies enemies = new Enemies();
 
@@ -28,7 +28,7 @@ public class Movement {
 
         //Captura o que ele escreve e ve o que tem nessa chave, retornando seu valor.
         String keyValue = map.getMap().get(input);
-        System.out.println(keyValue);
+        
         //Verifica se o valor escrito é correto, se for troca de lugar.
         if (checkMovement(input, map)) {
             map.getMap().replace(map.getPos(), hero.getHeroName(), random.getSearchedRoom());

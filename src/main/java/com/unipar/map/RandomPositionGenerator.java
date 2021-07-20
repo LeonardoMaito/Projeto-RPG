@@ -7,6 +7,7 @@ package com.unipar.map;
 
 import com.unipar.enemies.Enemies;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,6 +16,8 @@ import java.util.Random;
 public class RandomPositionGenerator {
 
     static Enemies enemies = new Enemies();
+    
+    
     private String emptyRoom = "Vazio", trapRoom = "Obstaculo", searchedRoom = "Vasculhado", enemy = "Inimigo";
 
     public String randomObject() {
@@ -41,15 +44,22 @@ public class RandomPositionGenerator {
         Random aleatorio = new Random();
         int value = aleatorio.nextInt(3);
 
-        switch (value) {
+        switch (0) {
             case 0:
                 enemies.minorEnemyStatus();
+                JOptionPane.showMessageDialog(null, "Você encontrou o " + enemies.getObjectGoblin().getEnemyName());
+                break;
             case 1:
                 enemies.mediumEnemyStatus();
+                JOptionPane.showMessageDialog(null, "Você encontrou o " + enemies.getObjectOrc().getEnemyName());
+                break;
             case 2:
                 enemies.greatEnemyStatus();
+                JOptionPane.showMessageDialog(null, "Você encontrou o " + enemies.getObjectThrall().getEnemyName());
+                break;
+               
         }
-        System.out.println("Você encontrou o " + enemies.getoo());
+        
     }
 
     //Get and Set

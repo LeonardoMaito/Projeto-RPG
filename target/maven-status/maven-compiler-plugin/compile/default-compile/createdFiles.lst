@@ -1,0 +1,10 @@
+Main.class
+com\unipar\map\RandomPositionGenerator.class
+com\unipar\menu\Combat.class
+com\unipar\menu\PotionCount.class
+com\unipar\movement\Movement.class
+Controller.class
+com\unipar\heros\Hero.class
+com\unipar\enemies\Enemies.class
+com\unipar\enemies\Traps.class
+com\unipar\map\Map.class

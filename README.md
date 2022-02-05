@@ -1,14 +1,13 @@
 # Projeto-RPG
 
-# TO-DO
+Projeto desenvolvido como projeto semestral na faculdade, na matéria de estrutura de dados, em colabração com programação orientada à objetos. Foi realizado por três alunos:
 
-## Prioridade Alta:
-- Aplicação de herança para os sistemas genéricos como Inimigo e Herói.
-- Verificação e impressão do Mapa de forma correta.
-- Refatoração do movimento.
+ * João Schuh
+ * Pedro Tartari
+ * Leonardo Maito
 
-### Prioridade Baixa:
-- Implementar o sistema de poção dentro do menu do combate (Combate precisa ser aprimorado antes).
-- ~~Juntar o sistema de movimento com o sistema de poção, da mesma forma que o inimigo e as armadilhas.~~
-- Consertar mais um erro originado pela mudança na classe Hero. O erro está em Movement.randomItemSearch();
-- Ver como sera distribuido o combate, uma classe, um metodo e ser for metodo em qual local
+## Descrição
+
+Projeto baseado em jogos de RPG com combate em turnos, utilizando um mapa gerado aleatoriamente, com inimigos e armadilhas aleatórias. O jogador pode escolher uma de três classes
+disponíveis, com atributos diferentes.
+
